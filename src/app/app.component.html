@@ -1,0 +1,8 @@
+<md-toolbar>{{title}}</md-toolbar>
+<div *ngFor="let datos of data">
+	<app-gauge-c [data]="datos.valor" [title]="datos.nombre"></app-gauge-c>
+</div>
+<hr>
+<div>
+	<app-table [data]="data"></app-table>
+</div>
